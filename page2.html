@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="outside">
+                <img src="static/love-mochi-love.jpg">
+                <h3>This is just the beginning of our journey,
+                    and I know that no matter wat life brings,
+                    we'll always have each other.</h3>
+                    
+                    <h2>XOXO MELISSA</h2>
+
+            </div>
+            <div class="inside">
+                <img src="static/patrick-star-love-you.jpg" width="100%" />
+                <h3>Being with you has made me a happier person. You mean the world to me.
+                    You make me so happy and i feel like the luckiest girl knowing that i have you.
+                    I cant believe weve come this far, it makes me so grateful and happy.
+                    I think about you all the time. I wish i could explain how much I love you.
+                    Words cannot even describe how amazing you are. I am so lucky to have you and
+                    I want you to know that i will always be here for you.
+                    I want this to last forever. May God continue to bless and strenghten our Relationship
+                    for many years to come.
+
+                </h3>
+            </div>
+
+        </div>
+        <div class="block">
+            <div class=" frames frame1">
+                <img src="static/pexels-suvan-chowdhury-37305-737568.jpg" height="140px" />
+                <P>LOVE YOU ALWAYS </P>
+            </div>
+            <div class="frames frame2">
+                <img src="static/pexels-suzy-hazelwood-1303835.jpg" height="140px" />
+                <P>AND FOREVEEEERRRRR</P>
+            </div>
+            <div class="frames frame3">
+                <img src="static/pexels-pengwhan-1767434.jpg" height="140px" />
+                <P>MUAHHHHH</P>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+    rel="stylesheet"> -->
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Bodoni Moda", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(static/pexels-pengwhan-1767434.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        perspective: 1000px;
+    }
+
+    .card {
+        width: 280px;
+        /* height: 360px; */
+        position: absolute;
+        top: 50px;
+        left: 230px;
+        transition: 2s;
+        transform-style: preserve-3d;
+    }
+
+    .card:hover {
+        transform: rotateY(180deg);
+    }
+
+    .block {
+        position: fixed;
+        top: 200px;
+        right: 600px;
+        left: 800px;
+        perspective: 800px;
+    }
+
+    .outside,
+    .inside {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        text-align: center;
+        /* padding-bottom: rem; */
+
+
+    }
+
+    .outside {
+        background-color: blanchedalmond;
+        box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+
+        /* margin: 90px; */
+
+    }
+
+    .outside h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: salmon;
+        margin-bottom: 30px;
+    }
+
+    .inside {
+        background-color: rgba(255, 244, 79);
+        box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+        /* transform: rotateY(180deg); */
+    }
+
+    .inside h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .frames {
+        width: 400px;
+        height: 150px;
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 0.8rem;
+        position: absolute;
+        transform: rotateY(-230deg) rotateX(20deg);
+
+    }
+
+    .frames img {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .frames p {
+        font-size: 20px;
+        font-weight: bold;
+        transform: rotateY(180deg);
+    }
+
+    .frames:nth-child(1) {
+        top: -110px;
+        z-index: -1;
+        background-color: coral;
+    }
+
+    .frames:nth-child(2) {
+        background-color: goldenrod;
+    }
+
+    .frames:nth-child(3) {
+        top: 100px;
+        background-color: burlywood;
+    }
+
+    /* .block img{
+        width: 50%;
+    } */
+</style>
+
+</html>
